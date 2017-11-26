@@ -11,4 +11,5 @@ Repositorio de ejemplos Scala asociado al tablero Trello [Dudas y Sesiones](http
 
 | TEMA | REPOSITORIO |
 |:-----|:------------|
-| Interpolación de cadenas | [string-interpolation](./string-interpolation/README.md)
+| Interpolación de cadenas | [string-interpolation](./string-interpolation)|
+| Option | [option](./option)

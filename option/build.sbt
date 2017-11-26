@@ -7,6 +7,6 @@ lazy val root = (project in file(".")).
       scalaVersion := "2.10.5",
       version      := "0.1.0-SNAPSHOT"
     )),
-    name := "Interpolacion de cadenas",
+    name := "Option",
     libraryDependencies += scalaTest % Test
   )
