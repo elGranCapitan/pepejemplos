@@ -1,4 +1,4 @@
-package com.gran.capitan
+package com.gc.ejemplos
 
 import org.scalatest.FunSuite
 

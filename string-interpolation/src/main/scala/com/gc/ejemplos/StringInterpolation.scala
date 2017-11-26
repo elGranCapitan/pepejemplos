@@ -1,10 +1,10 @@
-package com.gran.capitan
+package com.gc.ejemplos
 
 /**
-  * Ejemplos de uso de la interpolacion de cadenas ofrecida por Scala
+  * Ejemplos de uso de la interpolacion de cadenas
   */
 object StringInterpolation extends App {
-
+  
   def standardInterpolation(values: Seq[String]): Seq[String] = {
     values.map(value => s"value: $value")
   }
