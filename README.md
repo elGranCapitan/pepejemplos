@@ -12,4 +12,5 @@ Repositorio de ejemplos Scala asociado al tablero Trello [Dudas y Sesiones](http
 | TEMA | REPOSITORIO |
 |:-----|:------------|
 | Interpolación de cadenas | [string-interpolation](./string-interpolation)|
-| Option | [option](./option)
+| Option | [option](./option) |
+| Lambdas y recursividad | [parser-lambda](./parser-lambda) |
