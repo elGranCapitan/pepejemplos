@@ -43,4 +43,49 @@ class DesarrolladorTest extends FunSuite {
     assert(newDeveloper.experiencia == 2)
   }
 
+  test("uso en pattern match") {
+    val consultora1=Bluetab(250,50)
+    val consultora2=Everis(8000,20)
+
+    def logConsultoras(consultora: Consultoras): String = {
+      consultora match {
+        case objeto1: Bluetab => s"clientes: ${objeto1.clientes}, empleados: ${objeto1.empleados}"
+        case objeto2: Everis => s"paises: ${objeto2.paises}"
+      }
+    }
+
+    assert(logConsultoras(consultora1)=="clientes: 50, empleados: 250")
+    assert(logConsultoras(consultora2)=="paises: 20")
+  }
+
+  test("creando a partir de un apply en forma de lambda") {
+    val lambdaCreator: (String, String, Seq[String], Int) => Desarrollador = Desarrollador.apply _
+
+    val desarrollador= lambdaCreator("Natalia","Everis",List("java","scala"),3)
+
+    assert(desarrollador.nombre=="Natalia")
+    assert(desarrollador.tecnologias.size==2)
+  }
+
+  test("creando a partir de un apply") {
+    val tupleCreator: ((String, String, Seq[String], Int)) => Desarrollador = Desarrollador.tupled
+
+    val desarrollador= tupleCreator(("Patri","Everis",List("java","scala","R"),6))
+
+    assert(desarrollador.nombre=="Patri")
+    assert(desarrollador.tecnologias.size==3)
+  }
+
+  test("funciones ofrecidas por el trait Product") {
+    val tupleCreator: ((String, String, Seq[String], Int)) => Desarrollador = Desarrollador.tupled
+    val desarrollador= tupleCreator(("Patri","Everis",List("java","scala","R"),6))
+
+    assert(desarrollador.productArity==4)
+    assert(desarrollador.productElement(0).asInstanceOf[String]=="Patri")
+    assert(desarrollador.productElement(2).asInstanceOf[List[String]]==List("java","scala","R"))
+    assert(desarrollador.productIterator.filter(propiedad => propiedad.isInstanceOf[List[String]])
+      .flatMap(l => l.asInstanceOf[List[String]]).mkString(",")=="java,scala,R")
+    assert(desarrollador.productPrefix=="Desarrollador")
+  }
+
 }
