@@ -45,7 +45,7 @@ class ParseadorTest extends FunSuite {
 
     assert(result==Some("una marca final"))
   }
-
+  
   test("logParser con tags que no existen al final de la lista en la traza") {
     val logTrace =
       """esto es un log TAG1 que contiene varias etiquetas TAG2 y
@@ -105,7 +105,6 @@ class ParseadorTest extends FunSuite {
 
     assert(result==Some("una marca final"))
   }
-
 
   test("logParser sin tags en la traza") {
     val logTrace =

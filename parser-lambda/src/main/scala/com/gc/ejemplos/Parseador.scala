@@ -28,7 +28,7 @@ object Parseador {
 
   @tailrec
   def parserDeTraza(traza: String, etiquetas: Seq[String], marcaFinal: String): Option[String] = {
-     if (etiquetas.nonEmpty) {
+    if (etiquetas.nonEmpty) {
       cortarTraza(traza, etiquetas.head)(haciaDelante) match {
         case Some(subTraza) => parserDeTraza(subTraza, etiquetas.tail, marcaFinal)
         case None => parserDeTraza(traza, etiquetas.tail, marcaFinal)
