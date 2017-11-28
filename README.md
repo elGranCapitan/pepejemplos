@@ -12,5 +12,6 @@ Repositorio de ejemplos Scala asociado al tablero Trello [Dudas y Sesiones](http
 | TEMA | REPOSITORIO |
 |:-----|:------------|
 | Interpolación de cadenas | [string-interpolation](./string-interpolation)|
-| Option | [option](./option) |
-| Lambdas y recursividad | [parser-lambda](./parser-lambda) |
+| Evitar el *Null Pattern Object* usando ***Option*** | [option](./option) |
+| Ejemplo de parseador usando *Lambdas* y recursividad | [parser-lambda](./parser-lambda) |
+| Muchas cosas sobe ***case class*** | [case-class](./case-class) |
