@@ -1,4 +1,4 @@
-# [Parser Lambda](https://trello.com/c/CUfFY6AG)
+# [Parser Lambda](https://trello.com/c/lQ5XwUL3)
 
 Este ejemplo ofrece un parser de un log en el que se encuentra una posible lista de etiquetas, que pueden encontrarse o no, y ademas conocemos un marca de fin del paseo.
 
