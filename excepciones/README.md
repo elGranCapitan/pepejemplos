@@ -1,6 +1,6 @@
-# [Option](https://trello.com/c/CUfFY6AG)
+# [Excepciones](https://trello.com/c/puqtqJBY)
 
-Ejemplos de uso de Option, forma en la que Scala evita el Null Pattern Object
+Manejo de excepciones en Scala, forma en la que Scala  lo hace y comparado con Java
 
 Ejecución:
 
